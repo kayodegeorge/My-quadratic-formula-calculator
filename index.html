@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>QUAD CALC</title>
+</head>
+<body>
+
+    <h1>QUADRATIC FORMULA CALCULATOR</h1>
+    <p> Using this, ax<sup>2</sup> + bx + c = 0</p>
+    <div class="container">
+        <form>
+            <!-- <h3>a = </h3><input type="number" class="a">
+            <h3>b = </h3><input type="number" class="b">
+            <h3>c = </h3><input type="number" class="c">
+        </br><br>
+            <div><button class="btn" type="submit" value="submit">Calculate</button></div> -->
+          
+            <select id="signone">
+                <option value="+">+</option>
+                <option value="-">-</option>
+              </select>
+              <input id="numa" type="text" name="firstnum" placeholder="type the coeficient a" />x<sup>2</sup>
+              <select id="signtwo">
+                <option value="+">+</option>
+                <option value="-">-</option>
+              </select>
+              <input id="numb" type="text" name="secondnum" placeholder="type the coeficient b " /> x
+              <select id="signthree">
+                <option value="+">+</option>
+                <option value="-">-</option>
+              </select>
+              <input id="numc" type="text" name="thirdnum" placeholder="type the coeficient c" /> =0
+
+
+        </form>
+
+    </br><br>
+
+        <button class="btn" onclick="getValues();getSolution();showSolution();" type="button">Calculate</button>
+
+
+    </br><br>
+
+        <div class="card">
+            <p id="showone">X1 =</p>
+        </br>
+        <p id="showtwo">X2 =</p>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
